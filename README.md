@@ -1,0 +1,2 @@
+# UASDKInter
+Unity使用Plugins方式接入Android 渠道SDK的通用框架，使用中间件jar包的形式调用各种渠道SDK，包括Library。
