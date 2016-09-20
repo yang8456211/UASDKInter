@@ -14,7 +14,7 @@ public class UALog {
 	// 日志Tag
 	private static final String Tag = "uainter";
 	
-	private static void Log(String msg, LogType type){
+	private static void log(String msg, LogType type){
 		if (debugMode == 1){
 			switch (type) {
 			case V:
@@ -40,22 +40,22 @@ public class UALog {
 	}
 	
 	public static void D(String msg){
-		Log(msg,LogType.D);
+		log(msg,LogType.D);
 	}
 	
 	public static void W(String msg){
-		Log(msg,LogType.W);
+		log(msg,LogType.W);
 	}
 	
 	public static void I(String msg){
-		Log(msg,LogType.I);
+		log(msg,LogType.I);
 	}
 	
 	public static void E(String msg){
-		Log(msg,LogType.E);
+		log(msg,LogType.E);
 	}
 	
 	public static void V(String msg){
-		Log(msg,LogType.V);
+		log(msg,LogType.V);
 	}
 }

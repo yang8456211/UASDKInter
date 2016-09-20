@@ -45,7 +45,7 @@ public class UAMain extends UnityPlayerActivity{
 
 			sChannel = sJson.getInt("channel");
 			UALog.debugMode = sJson.getInt("debugmode");
-
+			
 			if (sJson.has("callbackobj")){
 				callBackobj = sJson.getString("callbackobj");
 			}
@@ -53,7 +53,7 @@ public class UAMain extends UnityPlayerActivity{
 			if (sJson.has("callbackfun")){
 				callBackFun = sJson.getString("callbackfun");
 			}
-			
+
 			UALog.I("调用uaInit，当前的channel为 " + sChannel);
 
 			final UAGameInterf uaManager = getSdkObj(sChannel);
@@ -77,6 +77,11 @@ public class UAMain extends UnityPlayerActivity{
 	// 登录
 	public static void uaLogin(String jsonString) {
 		try {
+			if (!UAUtil.isClickAvaliable()){
+				UALog.E("接收连续多次调用接口请求无效");
+				return;
+			}
+			
 			final JSONObject sJson = new JSONObject(jsonString);
 
 			final UAGameInterf uaManager = getSdkObj(sChannel);
@@ -95,6 +100,11 @@ public class UAMain extends UnityPlayerActivity{
 
 	// 登出
 	public static void uaLogout() {
+		if (!UAUtil.isClickAvaliable()){
+			UALog.E("接收连续多次调用接口请求无效");
+			return;
+		}
+		
 		final UAGameInterf uaManager = getSdkObj(sChannel);
 		activity.runOnUiThread(new Runnable() {
 
@@ -107,6 +117,11 @@ public class UAMain extends UnityPlayerActivity{
 
 	// 退出
 	public static void uaExit() {
+		if (!UAUtil.isClickAvaliable()){
+			UALog.E("接收连续多次调用接口请求无效");
+			return;
+		}
+		
 		final UAGameInterf uaManager = getSdkObj(sChannel);
 		activity.runOnUiThread(new Runnable() {
 
