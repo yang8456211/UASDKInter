@@ -152,15 +152,15 @@ ajc_SDKCall.CallStatic("uaLogin",json);
 
 回调在框内显示
 
-![](./IMG/1.jpg =300x)
-
+<img src="./IMG/1.jpg" width = "300" height = "500" alt="1" align=center />
+ 
 **小米登录**
 
-![](./IMG/2.jpg =300x)
+<img src="./IMG/2.jpg" width = "300" height = "500" alt="2" align=center />
 
 **小米支付**
 
-![](./IMG/3.jpg =300x)
+<img src="./IMG/3.jpg" width = "300" height = "500" alt="3" align=center />
 
 
 
