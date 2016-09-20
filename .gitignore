@@ -1,3 +1,7 @@
 #忽略bin目录和gen目录
 UASDKInter/bin
 UASDKInter/gen
+UASDKInter/project.properties
+UASDKInter/.classpath
+UASDKInter/.project
+UASDKInter/.settings/
