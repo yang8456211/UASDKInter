@@ -45,27 +45,26 @@ public class simpleDemo: MonoBehaviour {
 			
 		
 		// Pay
-		if(GUI.Button(new Rect(600,300,450,300),"生命周期测试1"))
+		if(GUI.Button(new Rect(600,300,450,300),"支付"))
 		{
-			string json = "{'status':'2'}";
-			ajc_SDKCall.CallStatic("uaLifeCycle",json);
+            string json = "{'cporderid':'2111112121212121212121','cpuserinfo':'','amount':'21','gameuserbalance':'','gameusergamervip':''," +
+                "'gameuserlv':'','gameuserpartyname':'','gameuserrolename':'','gameuserroleid':'','gameuserservername':''}";
+            ajc_SDKCall.CallStatic("uaPay",json);
 		}
 		
 		// Logout
-		if(GUI.Button(new Rect(100,700,450,300),"生命周期测试2"))
+		if(GUI.Button(new Rect(100,700,450,300),"其他测试1"))
 		{
 			string json = "{'status':'3'}";
 			ajc_SDKCall.CallStatic("uaLifeCycle",json);
 		}
 
 		// Pay
-		if(GUI.Button(new Rect(600,700,450,300),"支付"))
+		if(GUI.Button(new Rect(600,700,450,300),"其他测试2"))
 		{
-			string json = "{'cporderid':'2111112121212121212121','cpuserinfo':'','amount':'21','gameuserbalance':'','gameusergamervip':''," +
-				"'gameuserlv':'','gameuserpartyname':'','gameuserrolename':'','gameuserroleid':'','gameuserservername':''}";
-			ajc_SDKCall.CallStatic("uaPay",json);
+            string json = "{'status':'2'}";
+            ajc_SDKCall.CallStatic("uaLifeCycle",json);
 		}
-
 	} 
 	
 	
