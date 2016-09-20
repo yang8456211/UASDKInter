@@ -147,7 +147,20 @@ ajc_SDKCall.CallStatic("uaLogin",json);
 
 在Src右键导出jar即可，使用时请放到Plugin/Android/libs下面
 
+# 四、效果
+**初始化界面**
 
+回调在框内显示
+
+![](./IMG/1.jpg =300x)
+
+**小米登录**
+
+![](./IMG/2.jpg =300x)
+
+**小米支付**
+
+![](./IMG/3.jpg =300x)
 
 
 
